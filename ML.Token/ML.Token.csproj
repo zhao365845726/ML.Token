@@ -1,12 +1,55 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
+        <LangVersion>8.0</LangVersion>
+        <Version>1.0.1-beta1</Version>
+        <AssemblyName>ML.Token</AssemblyName>
+        <RootNamespace>ML.Token</RootNamespace>
+        <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
+        <Description>ML.Token</Description>
+        <Copyright>MLTechnology</Copyright>
+        <PackageTags>MLTechnology,Core,Class,Library</PackageTags>
+        <Authors>MLTechnology</Authors>
+        <Owners>MLTechnology</Owners>
+        <PackageLicenseUrl>https://github.com/zhao365845726/ML.Token/blob/master/LICENSE</PackageLicenseUrl>
+        <Title>ML.Token</Title>
+        <ProjectUrl> https://github.com/zhao365845726/ML.Token </ProjectUrl>
+        <PackageProjectUrl>https://github.com/zhao365845726/ML.Token</PackageProjectUrl>
+        <PackageIconUrl>http://image.milisx.com/logox200.png</PackageIconUrl>
+        <PackageReleaseNotes>
+            v0.1 创世
+        </PackageReleaseNotes>
+        <RepositoryUrl> https://github.com/zhao365845726/ML.Token </RepositoryUrl>
+        <Configurations>Debug;Release;Test</Configurations>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="CSRedisCore" Version="3.8.670" />
-    <PackageReference Include="ML.Core" Version="1.0.87-beta1" />
-  </ItemGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>..\..\BuildOutPut</OutputPath>
+        <DocumentationFile>..\..\BuildOutPut\ML.Token.XML</DocumentationFile>
+        <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
+        <Optimize>true</Optimize>
+        <DebugType>pdbonly</DebugType>
+        <ErrorReport>prompt</ErrorReport>
+        <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>F:\local_nuget</OutputPath>
+        <!--<OutputPath>C:\Env\local-nuget</OutputPath>-->
+        <DocumentationFile>..\..\BuildOutPut\ML.Token.XML</DocumentationFile>
+        <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
+        <Optimize>true</Optimize>
+        <DebugType>pdbonly</DebugType>
+        <ErrorReport>send</ErrorReport>
+        <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CSRedisCore" Version="3.8.670" />
+        <PackageReference Include="ML.Core" Version="1.0.87-beta1" />
+    </ItemGroup>
 
 </Project>
