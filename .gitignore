@@ -6,3 +6,6 @@
 /.vs/ML.Token/v16
 /ML.Token/bin/Debug/netstandard2.1
 /ML.Token/bin/Debug
+/ML.TokenTests/bin/Debug/net5.0
+/ML.TokenTests/obj
+/.vs/ML.Token

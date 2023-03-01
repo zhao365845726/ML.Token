@@ -1,0 +1,103 @@
+{
+    "yonsuite-sandbox": {
+        "appKey": "696aed95247c493d91829adca16d5cf4",
+        "appSecret": "24f3ca939e874145a33bc396282e61a0",
+        "timestamp": "",
+        "signature": ""
+    },
+    "yonsuite-offical": {
+        "appKey": "c35da7dc02154a5db9bb889cfd110269",
+        "appSecret": "c6466da99e5d48f8bde9817944d9b6bc",
+        "timestamp": "",
+        "signature": ""
+    },
+    "mintsoft-sandbox": {
+        "UserName": "",
+        "Password": ""
+    },
+    "mintsoft-offical": {
+        "UserName": "",
+        "Password": ""
+    },
+    "policy1": {
+        "Description": "history",
+        "SleepTime": 86400,
+        "StartExecMinute": 10,
+        "EnableStartExecMinute": true,
+        "RedisLogSaveInterval": 600,
+        "ExecInterval": 86400,
+        "ExecHandlerPurchaseOrderPageIndex": 1,
+        "ExecHandlerPurchaseOrderPageSize": 10,
+        "ExecHandlerPurchaseOrderTotal": 413,
+        "ExecHandlerPurchaseOrderNumber": 10,
+        "EnablePurchaseOrderSingleExec": true,
+        "PurchaseOrderCode": "",
+        "ExecHandlerPurinRecordPageIndex": 1,
+        "ExecHandlerPurinRecordPageSize": 10,
+        "ExecHandlerPurinRecordTotal": 10,
+        "ExecHandlerPurinRecordNumber": 10,
+        "EnablePurinRecordSingleExec": true,
+        "ExecHandlerStoreTransferPageIndex": 1,
+        "ExecHandlerStoreTransferPageSize": 10,
+        "ExecHandlerStoreTransferTotal": 1020,
+        "ExecHandlerStoreTransferNumber": 10,
+        "EnableStoreTransferSingleExec": true,
+        "Cache_Redis_Configuration": "127.0.0.1:6379,password=123456,defaultDatabase=3,prefix=ML:,poolsize=1500,tryit=0",
+        "Debug": true,
+        "PurchaseOrder": {
+            "Code": "CGDD0000220812000038"
+        },
+        "PurinRecord": {
+            "Code": "CGRK20220823000027"
+        },
+        "StoreTransfer": {
+            "Code": ""
+        },
+        "TimeController": {
+            "PermanentSave": -1,
+            "TemporarySave": 600
+        }
+    },
+    "policy2": {
+        "Description": "new",
+        "SleepTime": 5,
+        "ExecNumberLimit": 1,
+        "StartExecMinute": 10,
+        "EnableStartExecMinute": false,
+        "RedisLogSaveInterval": 600,
+        "ExecInterval": 60,
+        "ExecHandlerPurchaseOrderPageIndex": 1,
+        "ExecHandlerPurchaseOrderPageSize": 1,
+        "ExecHandlerPurchaseOrderTotal": 1,
+        "ExecHandlerPurchaseOrderNumber": 1,
+        "EnablePurchaseOrderSingleExec": false,
+        "PurchaseOrderCode": "",
+        "ExecHandlerPurinRecordPageIndex": 1,
+        "ExecHandlerPurinRecordPageSize": 100,
+        "ExecHandlerPurinRecordTotal": 10,
+        "ExecHandlerPurinRecordNumber": 10,
+        "EnablePurinRecordSingleExec": false,
+        "ExecHandlerStoreTransferPageIndex": 1,
+        "ExecHandlerStoreTransferPageSize": 10,
+        "ExecHandlerStoreTransferTotal": 1020,
+        "ExecHandlerStoreTransferNumber": 1,
+        "EnableStoreTransferSingleExec": false,
+        "Cache_Redis_Configuration": "127.0.0.1:6379,password=123456,defaultDatabase=4,prefix=ML:,poolsize=1500,tryit=0",
+        "Debug": false,
+        "PurchaseOrder": {
+            "Code": ""
+        },
+        "PurinRecord": {
+            "Code": "CGRK20221025000001",
+            "EnableAppointDate": true,
+            "AppointDate": "2023-01-03"
+        },
+        "StoreTransfer": {
+            "Code": ""
+        },
+        "TimeController": {
+            "PermanentSave": -1,
+            "TemporarySave": 600
+        }
+    }
+}

@@ -17,7 +17,7 @@ namespace ML.Token.YonYou
         /// <param name="ysEnv"></param>
         /// <param name="isUseRedis">是否使用Redis存储</param>
         /// <returns></returns>
-        public static string GetSelfAccessToken(string filePath,string ysEnv,bool isUseRedis)
+        public static string GetSelfAccessToken(string filePath,string ysEnv,bool isUseRedis = false)
         {
             System.DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1)); // 当地时区
             long timeStamp = (long)(DateTime.Now - startTime).TotalSeconds; // 相差秒数
